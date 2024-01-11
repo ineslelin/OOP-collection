@@ -1,0 +1,21 @@
+phase 1:
+	- two fleets, roundbased
+	- automated, computer
+	- each fleet 1 - 9 ships
+		- prompt that lets user choose amount
+		- intialize vector and push with a for loop until desired amount
+	- three types of ships (virtual parent class ship w/ three child classes)
+		- hunter
+		- destroyer
+		- cruiser
+	- actions
+		- computer chooses ship from own fleet and ship from other fleet as 
+		  target
+		- ten sided dice
+			- is the result >= the size of the ship => successful attack
+		- damage is taken off the hull of the ship
+			- if hp < 1 => ship destroyed and taken off the fleet
+	- special rules
+		- hunters do double the damage if their roll was 9 or 10
+		- cruisers get an additional turn if their last attack was successful
+		- destroyer have an added +2 for their dice roll
